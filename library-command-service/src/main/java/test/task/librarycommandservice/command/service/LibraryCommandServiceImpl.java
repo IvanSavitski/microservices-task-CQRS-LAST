@@ -36,12 +36,8 @@ import java.util.concurrent.TimeUnit;
 public class LibraryCommandServiceImpl implements LibraryCommandService {
 
     private final BookCommandRepository bookCommandRepository;
-
-    //@Value("${topic.send-order}")
-    //private String topic;
     private static final Long DAYS = 14L;
     private final LibraryCommandRepository libraryCommandRepository;
-    //private final BookCommandRepository bookCommandRepository;
     private final WebClient webClient;
 
 
@@ -114,7 +110,6 @@ public class LibraryCommandServiceImpl implements LibraryCommandService {
             log.info("Book is exist in library");
         }
 
-        //if isBorrowed is true
         if(bookMatch.get().isBorrowed()) {
             log.info("Book is already borrowed");
             throw new BookLibraryException("Book is already borrowed", bookId);
@@ -144,7 +139,6 @@ public class LibraryCommandServiceImpl implements LibraryCommandService {
             //LibraryCommandKafkaEvent event = new LibraryCommandKafkaEvent("BookBorrowedToLibrary", libraryBook);
             //this.kafkaTemplate.send(topic, event);
 
-
             // Автоматический возврат книги через заданный период времени
             CompletableFuture.delayedExecutor(libraryBook.getDaysPeriod(), TimeUnit.SECONDS)
                     .execute(() -> returnBook(bookExmp.getId(), libraryBook.getId()));
@@ -152,10 +146,6 @@ public class LibraryCommandServiceImpl implements LibraryCommandService {
             throw new ResourceNotFoundException("Library", "bookId", bookId);
         });
     }
-
-
-
-
 
 
     public void returnBook(long bookId, long libraryBookId) {

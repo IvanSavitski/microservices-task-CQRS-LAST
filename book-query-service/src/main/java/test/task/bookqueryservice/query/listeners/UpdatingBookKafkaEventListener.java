@@ -10,8 +10,6 @@ import test.task.bookqueryservice.query.dto.BookQueryKafkaEvent;
 import test.task.bookqueryservice.query.repository.BookQueryRepository;
 
 @Component
-//@KafkaListener(topics = "book_event_topic", groupId = "book_event_group",
-  //      properties = {"spring.json.value.default.type=test.task.bookcommandservice.command.dto.BookCommandKafkaEvent"})
 public class UpdatingBookKafkaEventListener {
     private BookQueryRepository bookQueryRepository;
     private ModelMapper modelMapper = new ModelMapper();

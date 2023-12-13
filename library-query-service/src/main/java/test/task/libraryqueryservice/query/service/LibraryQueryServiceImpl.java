@@ -26,12 +26,6 @@ public class LibraryQueryServiceImpl implements LibraryQueryService {
     private static final Long DAYS = 60L; //14L;
     private final LibraryQueryRepository libraryQueryRepository;
     private final BookQueryRepository bookQueryRepository;
-    //private final WebClient webClient;
-
-
-   // private static final String topicCreateOrder = "${topic.send-order}";
-    //private static final String kafkaConsumerGroupId = "${spring.kafka.consumer.group-id}";
-
 
     @Autowired
     public LibraryQueryServiceImpl(LibraryQueryRepository libraryQueryRepository, BookQueryRepository bookQueryRepository) {
@@ -39,60 +33,6 @@ public class LibraryQueryServiceImpl implements LibraryQueryService {
         //this.webClient = webClientBuilder.build();
         this.bookQueryRepository = bookQueryRepository;
     }
-
-    /*@Transactional
-    @KafkaListener(topics = topicCreateOrder,
-            groupId = kafkaConsumerGroupId,
-            properties = {"spring.json.value.default.type=test.task.libraryqueryservice.query.dto.LibraryQueryEvent"})
-    public void processProductEvent(String event) {
-
-        System.out.println("Getting event " + event);
-
-        LibraryQueryKafkaEvent libraryQueryKafkaEvent;
-        LibraryQueryIdKafkaEvent libraryQueryIdKafkaEvent;
-        LibraryAndBookQueryKafkaEvent libraryAndBookQueryKafkaEvent;
-
-        try {
-            libraryQueryKafkaEvent = new ObjectMapper().readValue(event, LibraryQueryKafkaEvent.class);
-            libraryQueryIdKafkaEvent =  new ObjectMapper().readValue(event, LibraryQueryIdKafkaEvent.class);
-            libraryAndBookQueryKafkaEvent =  new ObjectMapper().readValue(event, LibraryAndBookQueryKafkaEvent.class);
-
-            System.out.println(libraryQueryKafkaEvent);
-
-            if (libraryQueryKafkaEvent.getType().equals("BookAddedToLibrary")) {
-                this.libraryQueryRepository.save(libraryQueryKafkaEvent.getLibraryQuery());
-                // Обновить репозиторий книг
-                //BookQuery book = libraryBook.getBook();
-                //book.setBorrowed(true);
-                //bookQueryRepository.save(book);
-                log.info("Book added to library: {}", libraryQueryKafkaEvent.getLibraryQuery().getId());
-            }
-
-            if (libraryQueryKafkaEvent.getType().equals("BookBorrowedFromLibrary")) {
-                this.libraryQueryRepository.save(libraryAndBookQueryKafkaEvent.getLibraryQuery());
-                this.bookQueryRepository.save(libraryAndBookQueryKafkaEvent.getBookQuery());
-
-                log.info("Book borrowed from library: {}  {}", libraryAndBookQueryKafkaEvent.getBookQuery(), libraryAndBookQueryKafkaEvent.getBookQuery());
-            }
-
-            if (libraryQueryKafkaEvent.getType().equals("BookReturned")) {
-                this.libraryQueryRepository.save(libraryAndBookQueryKafkaEvent.getLibraryQuery());
-                this.bookQueryRepository.save(libraryAndBookQueryKafkaEvent.getBookQuery());
-
-                log.info("Book returned to library: {}  {}", libraryAndBookQueryKafkaEvent.getBookQuery(), libraryAndBookQueryKafkaEvent.getBookQuery());
-            }
-
-            if (libraryQueryIdKafkaEvent.getType().equals("BookDeletedFromLibrary")) {
-                this.libraryQueryRepository.deleteById(libraryQueryIdKafkaEvent.getId());
-
-                log.info("Book deleted from library: {}", libraryQueryIdKafkaEvent.getId());
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }*/
-
 
     public List<BookQuery> getAvailableBooks() {
         List<LibraryQuery> libraryBooks = libraryQueryRepository.findAll();
@@ -104,7 +44,6 @@ public class LibraryQueryServiceImpl implements LibraryQueryService {
 
         return availableBooks;
     }
-
 
     public List<BookQuery> getAllBorrowedBooks() {
         List<LibraryQuery> libraryBooks = libraryQueryRepository.findAll();

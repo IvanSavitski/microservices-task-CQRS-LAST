@@ -11,10 +11,6 @@ import java.util.List;
 import java.util.Optional;
 
 public interface BookQueryService {
-    //void processProductEvent(List<BookQueryEvent> event);
-    //void processAddingBooksListQueryKafkaEvent(List<BookQueryKafkaEvent> events);
-    //void processAddingBooksListQueryKafkaEvent(BookQueriesListKafkaEvent event);
-    //void processAddingBooksListQueryKafkaEvent(BookCommandsListKafkaEvent bookCommandEvent);
     // GET
     List<BookQuery> getAllBooks();
     Optional<BookQuery> getBookById(long id);

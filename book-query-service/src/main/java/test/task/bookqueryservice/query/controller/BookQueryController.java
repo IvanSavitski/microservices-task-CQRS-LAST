@@ -31,8 +31,6 @@ public class BookQueryController {
         this.modelMapper = modelMapper;
     }
 
-
-
     // http://localhost:8082/api/books/query/get/getAll
     @GetMapping("get/getAll")
     public List<BookQueryEvent> getAllBooks() {
@@ -42,8 +40,6 @@ public class BookQueryController {
                 .collect(Collectors.toList());
     }
 
-
-
     // http://localhost:8082/api/books/query/get/getById/{id}
     @GetMapping("get/getById/{id}")
     public ResponseEntity<BookQueryEvent> getBookById(@PathVariable(value = "id") Long id) {
@@ -52,8 +48,6 @@ public class BookQueryController {
                 .map(dto -> new ResponseEntity<>(dto, HttpStatus.OK))
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
-
-
 
     // http://localhost:8082/api/books/query/get/getByIsbn/{isbn}
     @GetMapping("get/getByIsbn/{isbn}")

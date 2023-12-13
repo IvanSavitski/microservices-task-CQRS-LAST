@@ -33,7 +33,7 @@ public class DeletingBookKafkaEventListener {
                 System.out.println("To repo " + bookQueryIdKafkaEvent);
                 long id = bookQueryIdKafkaEvent.getId();
                 System.out.println(id);
-                this.bookQueryRepository.deleteById(id);//bookQueryIdKafkaEvent.getId());
+                this.bookQueryRepository.deleteById(id);
                 System.out.println("Book was successfully received from producer by BookCommandKafkaEvent and also successfully deleted from consumer repository");
             }
         } catch (Exception e) {
