@@ -1,0 +1,208 @@
+---
+version: '3.'
+services:
+        ## MySQL Docker Compose Config
+        postgres-book-command:
+                container_name: postgres-book-command
+                image: postgres
+                environment:
+                        POSTGRES_DB: book-command-service
+                        POSTGRES_USER: ivan
+                        POSTGRES_PASSWORD: password
+                        PGDATA: /data/postgres
+                volumes:
+                        - ./postgres-book-command:/data/postgres
+                expose:
+                        - "5431"
+                ports:
+                        - "5431:5431"
+                command: -p 5431
+                restart: always
+
+        postgres-book-query:
+                container_name: postgres-book-query
+                image: postgres
+                environment:
+                        POSTGRES_DB: book-query-service
+                        POSTGRES_USER: ivan
+                        POSTGRES_PASSWORD: password
+                        PGDATA: /data/postgres
+                volumes:
+                        - ./postgres-book-query:/data/postgres
+                ports:
+                        - "5432:5432"
+                restart: always
+
+        postgres-library-command:
+                container_name: postgres-library-command
+                image: postgres
+                environment:
+                        POSTGRES_DB: library-command-service
+                        POSTGRES_USER: ivan
+                        POSTGRES_PASSWORD: password
+                        PGDATA: /data/postgres
+                volumes:
+                        - ./postgres-library-command:/data/postgres
+                expose:
+                        - "5433"
+                ports:
+                        - "5433:5433"
+                command: -p 5433
+                restart: always
+
+        postgres-library-query:
+                container_name: postgres-library-query
+                image: postgres
+                environment:
+                        POSTGRES_DB: library-query-service
+                        POSTGRES_USER: ivan
+                        POSTGRES_PASSWORD: password
+                        PGDATA: /data/postgres
+                volumes:
+                        - ./postgres-library-query:/data/postgres
+                ports:
+                        - "5434:5434"
+                restart: always
+
+
+
+
+        ## Keycloak Config with Mysql database
+        keycloak-mysql:
+                container_name: keycloak-mysql
+                image: mysql:5.7
+                volumes:
+                        - ./mysql_keycloak_data:/var/lib/mysql
+                environment:
+                        MYSQL_ROOT_PASSWORD: root
+                        MYSQL_DATABASE: keycloak
+                        MYSQL_USER: keycloak
+                        MYSQL_PASSWORD: password
+
+        keycloak:
+                container_name: keycloak
+                image: quay.io/keycloak/keycloak:19.0.0
+                command: [ "start-dev", "--import-realm" ]
+                environment:
+                        DB_VENDOR: MYSQL
+                        DB_ADDR: mysql
+                        DB_DATABASE: keycloak
+                        DB_USER: keycloak
+                        DB_PASSWORD: password
+                        KEYCLOAK_ADMIN: admin
+                        KEYCLOAK_ADMIN_PASSWORD: admin
+                ports:
+                        - "8080:8080"
+                volumes:
+                        - ./realms/:/opt/keycloak/data/import/
+                depends_on:
+                        - keycloak-mysql
+
+
+
+        zookeeper:
+                image: confluentinc/cp-zookeeper:latest
+                container_name: zookeeper
+                environment:
+                        ZOOKEEPER_CLIENT_PORT: 2181
+                        ZOOKEEPER_TICK_TIME: 2000
+                ports:
+                        - 22181:2181
+
+        broker:
+                image: confluentinc/cp-kafka:latest
+                container_name: broker
+                depends_on:
+                        - zookeeper
+                ports:
+                        - 9092:9092
+                environment:
+                        KAFKA_BROKER_ID: 1
+                        KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+                        KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker:29092,PLAINTEXT_HOST://localhost:9092
+                        KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+                        KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+                        KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+                        KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+                        KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+
+        ## Eureka Server
+        discovery-server:
+                image: ivansavitski/discovery-server:latest
+                container_name: discovery-server
+                ports:
+                        - "8761:8761"
+                environment:
+                        - SPRING_PROFILES_ACTIVE=docker
+
+
+        api-gateway:
+                image: ivansavitski/api-gateway:latest
+                container_name: api-gateway
+                ports:
+                        - "8185:8080"
+                expose:
+                        - "8185"
+                environment:
+                        - SPRING_PROFILES_ACTIVE=docker
+                        - LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_SECURITY=TRACE
+                depends_on:
+                        - discovery-server
+                        - keycloak
+
+
+        ## book-command-service Docker Compose Config
+        book-command-service:
+                container_name: book-command-service
+                image: ivansavitski/book-command-service:latest
+                environment:
+                        - SPRING_PROFILES_ACTIVE=docker
+                        - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-book-command:5431/book-command-service
+                depends_on:
+                        - postgres-book-command
+                        - broker
+                        - discovery-server
+                        - api-gateway
+
+
+        ## book-query-service Docker Compose Config
+        book-query-service:
+                container_name: book-query-service
+                image: ivansavitski/book-query-service:latest
+                environment:
+                        - SPRING_PROFILES_ACTIVE=docker
+                        - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-book-query:5432/book-query-service
+                depends_on:
+                        - postgres-book-query
+                        - broker
+                        - discovery-server
+                        - api-gateway
+
+
+        ## Inventory-Service Docker Compose Config
+        library-command-service:
+                container_name: library-command-service
+                image: ivansavitski/library-command-service:latest
+                environment:
+                        - SPRING_PROFILES_ACTIVE=docker
+                        - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-library-command:5433/library-command-service
+                depends_on:
+                        - postgres-library-command
+                        - broker
+                        - discovery-server
+                        - api-gateway
+
+
+        ## Inventory-Service Docker Compose Config
+        library-query-service:
+                container_name: library-query-service
+                image: ivansavitski/library-query-service:latest
+                environment:
+                        - SPRING_PROFILES_ACTIVE=docker
+                        - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-library-query:5434/library-query-service
+                depends_on:
+                        - postgres-library-query
+                        - broker
+                        - discovery-server
+                        - api-gateway
+

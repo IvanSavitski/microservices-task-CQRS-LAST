@@ -1,0 +1,32 @@
+server:
+  port: 8082
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:29092
+    consumer:
+      #group-id: "book-event-group"
+      #bootstrap-servers: localhost:29092
+      enable-auto-commit: true
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      #org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: '*'
+          kafka:
+            consumer:
+              max:
+                poll:
+                  records: 10
+                  interval:
+                    ms: 300000
+
+#topic:
+#  get-book: book_event_topic
+
+
+

@@ -1,0 +1,21 @@
+server:
+  port: 8087
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:29092
+    producer:
+      #bootstrap-servers: localhost:29092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        #retries: 0
+        acks: all
+        spring:
+          json:
+            add:
+              type:
+                headers: true
+
+#topic:
+#  send-book: book_event_topic
