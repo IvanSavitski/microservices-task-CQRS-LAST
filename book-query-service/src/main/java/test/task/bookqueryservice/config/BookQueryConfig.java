@@ -6,11 +6,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.TopicBuilder;
 
 @Configuration
-public class BookConfig {
+public class BookQueryConfig {
     @Bean
     public NewTopic bookStreamTopic() {
         return TopicBuilder
-                .name("book-event-topic")
+                .name("book_event_topic")
                 .build();
     }
 }

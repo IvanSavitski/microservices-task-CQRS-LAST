@@ -12,12 +12,12 @@ import org.springframework.web.reactive.function.client.WebClient;
 @EntityScan("test.task.libraryqueryservice.query.entity")
 @EnableJpaRepositories(basePackages = {"test.task.bookqueryservice.query.repository",
         "test.task.libraryqueryservice.query.repository"})
-public class LibraryConfig {
+public class LibraryQueryConfig {
 
-    @Bean
+    /*@Bean
     //@LoadBalanced
     public WebClient.Builder webClientBuilder() {
         return WebClient.builder();
-    }
+    }*/
 
 }

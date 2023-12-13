@@ -1,2 +1,22 @@
-package test.task.bookqueryservice.query.service;public interface BookQueryService {
+package test.task.bookqueryservice.query.service;
+
+
+import test.task.bookcommandservice.command.dto.BookCommandsListKafkaEvent;
+import test.task.bookqueryservice.query.dto.BookQueriesListKafkaEvent;
+import test.task.bookqueryservice.query.dto.BookQueryEvent;
+import test.task.bookqueryservice.query.dto.BookQueryKafkaEvent;
+import test.task.bookqueryservice.query.entity.BookQuery;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface BookQueryService {
+    //void processProductEvent(List<BookQueryEvent> event);
+    //void processAddingBooksListQueryKafkaEvent(List<BookQueryKafkaEvent> events);
+    //void processAddingBooksListQueryKafkaEvent(BookQueriesListKafkaEvent event);
+    //void processAddingBooksListQueryKafkaEvent(BookCommandsListKafkaEvent bookCommandEvent);
+    // GET
+    List<BookQuery> getAllBooks();
+    Optional<BookQuery> getBookById(long id);
+    Optional<BookQuery> getBookByIsbn(String isbn);
 }

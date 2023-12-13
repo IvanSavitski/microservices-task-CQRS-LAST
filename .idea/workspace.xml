@@ -4,26 +4,193 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3032e71a-9090-499b-a262-32629b77510d" name="Changes" comment="" />
+    <list default="true" id="3032e71a-9090-499b-a262-32629b77510d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/Dockerfilelayered" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/Dockerfilelayered" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/test/task/apigateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/test/task/apigateway/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/test/task/apigateway/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/test/task/apigateway/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application-docker.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application-docker.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-command-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-command-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/BookCommandServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/BookCommandServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/controller/BookCommandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/controller/BookCommandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/dto/BookCommandEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/dto/BookCommandEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/dto/BookCommandIdKafkaEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/dto/BookCommandIdKafkaEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/dto/BookCommandKafkaEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/dto/BookCommandKafkaEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/dto/BookCommandsListKafkaEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/dto/BookCommandsListKafkaEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/entity/BookCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/entity/BookCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/repository/BookCommandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/repository/BookCommandRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/service/BookCommandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/service/BookCommandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/service/BookCommandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/command/service/BookCommandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-command-service/src/main/java/test/task/bookcommandservice/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-command-service/src/main/resources/application-docker.properties" beforeDir="false" afterPath="$PROJECT_DIR$/book-command-service/src/main/resources/application-docker.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-command-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/book-command-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-command-service/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/book-command-service/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/BookQueryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/BookQueryServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/config/BookQueryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/config/BookQueryConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/controller/BookQueryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/controller/BookQueryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/dto/BookQueriesListKafkaEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/dto/BookQueriesListKafkaEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/dto/BookQueryEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/dto/BookQueryEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/dto/BookQueryIdKafkaEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/dto/BookQueryIdKafkaEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/dto/BookQueryKafkaEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/dto/BookQueryKafkaEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/entity/BookQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/entity/BookQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/listeners/AddingBookKafkaEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/listeners/AddingBookKafkaEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/listeners/AddingBooksListKafkaEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/listeners/AddingBooksListKafkaEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/listeners/DeletingBookKafkaEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/listeners/DeletingBookKafkaEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/listeners/UpdatingBookKafkaEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/listeners/UpdatingBookKafkaEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/repository/BookQueryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/repository/BookQueryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/service/BookQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/service/BookQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/service/BookQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/java/test/task/bookqueryservice/query/service/BookQueryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/resources/application-docker.properties" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/resources/application-docker.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-query-service/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/book-query-service/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/java/test/task/discoveryserver/DiscoveryServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/java/test/task/discoveryserver/DiscoveryServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/java/test/task/discoveryserver/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/java/test/task/discoveryserver/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/application-docker.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application-docker.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-command-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-command-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/LibraryCommandServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/LibraryCommandServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/controller/LibraryCommandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/controller/LibraryCommandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/dto/LibraryAndBookCommandKafkaEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/dto/LibraryAndBookCommandKafkaEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/dto/LibraryCommandEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/dto/LibraryCommandEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/dto/LibraryCommandIdKafkaEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/dto/LibraryCommandIdKafkaEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/dto/LibraryCommandKafkaEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/dto/LibraryCommandKafkaEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/dto/LibraryCommandsListKafkaEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/dto/LibraryCommandsListKafkaEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/entity/LibraryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/entity/LibraryCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/repository/LibraryCommandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/repository/LibraryCommandRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/service/LibraryCommandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/service/LibraryCommandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/service/LibraryCommandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/command/service/LibraryCommandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/configuration/LibraryCommandConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/configuration/LibraryCommandConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/exception/BookLibraryException.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-command-service/src/main/java/test/task/librarycommandservice/exception/BookLibraryException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-command-service/src/main/resources/application-docker.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library-command-service/src/main/resources/application-docker.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-command-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/library-command-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-command-service/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/library-command-service/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/LibraryQueryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/LibraryQueryServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/configuration/LibraryQueryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/configuration/LibraryQueryConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/exception/BookLibraryException.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/exception/BookLibraryException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/controller/LibraryQueryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/controller/LibraryQueryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/dto/LibraryAndBookQueryKafkaEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/dto/LibraryAndBookQueryKafkaEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/dto/LibraryQueriesListKafkaEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/dto/LibraryQueriesListKafkaEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/dto/LibraryQueryEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/dto/LibraryQueryEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/dto/LibraryQueryIdKafkaEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/dto/LibraryQueryIdKafkaEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/dto/LibraryQueryKafkaEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/dto/LibraryQueryKafkaEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/entity/LibraryQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/entity/LibraryQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/listeners/AddingBookToLibraryKafkaEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/listeners/AddingBookToLibraryKafkaEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/listeners/BorrowingBookFromLibraryKafkaEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/listeners/BorrowingBookFromLibraryKafkaEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/listeners/DeletingBookFromLibraryKafkaEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/listeners/DeletingBookFromLibraryKafkaEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/listeners/ReturningBookToLibraryKafkaEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/listeners/ReturningBookToLibraryKafkaEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/repository/LibraryQueryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/repository/LibraryQueryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/service/LibraryQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/service/LibraryQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/service/LibraryQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/java/test/task/libraryqueryservice/query/service/LibraryQueryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/resources/application-docker.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/resources/application-docker.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-query-service/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/library-query-service/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realms/realm-export.json" beforeDir="false" afterPath="$PROJECT_DIR$/realms/realm-export.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2Z8dIM4KlNpMXK21sdi2dTxTLR9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;f18f3aeb6b997a5c43b3ec6b05348aea&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Катана Хидыщ-хидыщ\IdeaProjects\microservices-task-CQRS2\api-gateway\src\main\resources" />
+      <recent name="C:\Users\Катана Хидыщ-хидыщ\IdeaProjects\microservices-task-CQRS2\library-command-service\src\main\resources" />
+      <recent name="C:\Users\Катана Хидыщ-хидыщ\IdeaProjects\microservices-task-CQRS2\book-query-service\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="test.task.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookCommandServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="book-command-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="test.task.bookcommandservice.BookCommandServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookQueryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="book-query-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="test.task.bookqueryservice.BookQueryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="discovery-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="test.task.discoveryserver.DiscoveryServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryCommandServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="library-command-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="test.task.librarycommandservice.LibraryCommandServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryQueryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="library-query-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="test.task.libraryqueryservice.LibraryQueryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -32,8 +199,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701807561951</updated>
-      <workItem from="1701807563270" duration="9000" />
+      <workItem from="1701807563270" duration="11762000" />
+      <workItem from="1702121431816" duration="35200000" />
+      <workItem from="1702215470873" duration="57098000" />
+      <workItem from="1702390525129" duration="7621000" />
+      <workItem from="1702400113867" duration="2790000" />
+      <workItem from="1702403864827" duration="40579000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -12,7 +12,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 @EntityScan("test.task.librarycommandservice.command.entity")
 @EnableJpaRepositories(basePackages = {"test.task.bookcommandservice.command.repository",
         "test.task.librarycommandservice.command.repository"})
-public class LibraryConfig {
+public class LibraryCommandConfig {
 
     @Bean
     //@LoadBalanced
